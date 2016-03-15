@@ -6,6 +6,13 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('posts');
+  this.route('unverified');
+  this.route('about');
+  this.route('users', function() {});
+  this.route('login');
+  this.route('signup');
+  this.route('new');
 });
 
 export default Router;
